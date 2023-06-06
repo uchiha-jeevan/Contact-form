@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./contact.css">
+    <title>Contact Form</title>
+</head>
+<body>
+    <h3>Get In Touch</h3>
+
+    <div class="contact">
+        
+        <form action="">
+            <input type="text" id="name" placeholder="Your Name ">
+            <input type="text" id="email" placeholder="Email Id ">
+            <input type="text" id="number" placeholder="Number ">
+            <input type="text" id="message" placeholder="Enter Your Message ">
+            <button id="btn" >Submit</button>
+        </form>
+    </div>
+
+
+    <!-- a4 -->
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <script>
+        let btn = document.getElementById("btn")
+        btn.addEventListener('click',function(){
+            
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let number = document.getElementById("number").value;
+            let msg = document.getElementById("message").value;
+            let body = "Name "+name +" <br/> Email "+email+" <br/> Number "+number+" <br/> Message "+msg;
+
+            Email.send({
+                SecureToken : "d4",
+                To : '',
+                From : "",
+                Subject : "",
+                Body : body
+            }).then(
+            message => alert(message)
+            );
+        })
+    </script>
+</body>
+</html>

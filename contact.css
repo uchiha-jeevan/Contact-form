@@ -1,0 +1,56 @@
+
+*{
+    margin: 0%;
+}
+h3 {
+    color: #000000;
+    text-align: center;
+    margin-top: 15px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+form {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 1vh 3vw;
+    width: 90%;
+    max-width: 600px;
+    border: 3px solid blueviolet;
+    border-radius: 10px;
+}
+
+div {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 40vh;
+}
+
+form input,
+form textarea {
+    border: 0;
+    border-radius: 18px;
+    margin: 10px 0;
+    padding: 10px;
+    outline: none;
+    background: #eaedf5;
+    font-size: 18px;
+}
+
+#btn {
+    padding: 15px;
+    background-color: rgb(47, 0, 255);
+    color: white;
+    font-size: 19px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    margin-top: 2px;
+    width: 150px;
+    margin: 10px auto 0;
+    border-radius: 10px;
+}
